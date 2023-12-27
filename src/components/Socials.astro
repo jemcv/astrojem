@@ -1,0 +1,19 @@
+---
+import Social from "./Links.astro";
+import { InstagramIcon, GithubIcon} from 'astro-feather';
+---
+
+<footer class="mt-8 flex ">
+    <Social
+        Icon={GithubIcon} 
+        url="https://github.com"
+        title="Github" 
+        alt="github"
+    />
+    <Social
+        Icon={InstagramIcon} 
+        url="https://instagram.com"
+        title="Instagram" 
+        alt="instagram"
+    />
+</footer>

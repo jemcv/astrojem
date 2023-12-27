@@ -1,16 +1,21 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "jemcv";
 
+const information = {
+  name: "Jem",
+  country: "PH",
+  occupation: "student",
+  hobbies: ["technology", "coding", "mechanical keyboards"],
+};
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+	<h1 class="text-4xl font-bold mb-4">ᜇᜒᜌᜒᜋ᜔</h1>
+	<div class="p-4">
+		<p class="mb-4">Hey there! I'm <span class="font-bold">{information.name}</span>.</p>
+		<p >I am passionate about <b>{information.hobbies[0]}</b>, <b>{information.hobbies[1]}</b>, and <b>{information.hobbies[2]}</b>. I’m currently on a mission to become a Software Developer, turning my passion for technology into a dream career. I’m in the process of completing my Bachelor of Science in Information Technology degree.</p>
+		<br>
+		<p>I am currently adopting a design approach focused on simplicity and clarity. My guiding philosophy is based on the belief that '<span class="font-bold italic">less is more</span>'.</p>
+	</div>
+</BaseLayout>

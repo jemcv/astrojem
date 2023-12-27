@@ -1,0 +1,26 @@
+---
+import Project from './Cards.astro';
+import { MonitorIcon, SmartphoneIcon, ChromeIcon } from 'astro-feather';
+---
+
+<section class="mt-4">
+    <h1 class="font-bold mb-2">Projects</h1>
+    <Project 
+        Icon={SmartphoneIcon} 
+        url="example.com"
+        title="Mobile App" 
+        description="planning to build a mobile app with react native..."
+    />
+    <Project 
+        Icon={ChromeIcon} 
+        url="example.com"
+        title="Web App" 
+        description="currently building this with astro..."
+    />
+    <Project 
+        Icon={MonitorIcon} 
+        url="example.com"
+        title="Desktop App" 
+        description="i dont plan to build one... XD"
+    />
+</section>

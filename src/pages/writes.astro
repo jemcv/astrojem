@@ -1,0 +1,29 @@
+---
+import { getCollection } from "astro:content";
+import Navigations from "../components/Navigations.astro";
+import Posts from "../components/Posts.astro";
+import PostLayout from "../layouts/PostLayout.astro";
+
+const pageTitle = "My Astro Learning Blog";
+const allPosts = await getCollection("writes");
+
+---
+<PostLayout pageTitle={pageTitle}>
+    <h1 class="text-4xl font-bold mb-4">ᜐᜓᜎᜆᜒᜈ᜔</h1>
+   
+    <div class="p-4">
+        <p class="italic text-neutral-600">
+            Here are my writings I never thought I would write. :) 
+        </p> 
+        {/*<p>Writes count: {allPosts.length}</p>*/}
+    </div>
+    
+    <Navigations url={"/"}/>
+    <ul class="mt-4">
+        {
+            allPosts.map((post) => (
+            <Posts url={`/writes/${post.slug}/`} title={post.data.title} description={post.data.description} pubDate={post.data.pubDate.toString().slice(0,10)}/>
+            ))
+        }
+    </ul>
+</PostLayout>

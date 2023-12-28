@@ -1,5 +1,5 @@
 ---
-const { Icon, title, description, url } = Astro.props;
+const { Icon, title, description, url, emoji } = Astro.props;
 ---
 
 <div class="flex items-center p-4">
@@ -8,6 +8,6 @@ const { Icon, title, description, url } = Astro.props;
     </div>
     <div class="ml-8">
         <p class="font-semibold"><a class="border border-transparent hover:border-neutral-100 underline" href={url}>{title}</a></p>
-        <p>{description}</p>
+        <p>{description} <span class="font-emoji">{emoji}</span></p>
     </div>
 </div>

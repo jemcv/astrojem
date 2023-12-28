@@ -5,6 +5,7 @@ export default {
 		extend: {
 			fontFamily: {
 				'noto': ['Noto Sans Tagalog', 'sans-serif'],
+				'emoji': ['Noto Emoji', 'sans-serif'],
 			}
 		},
 	},

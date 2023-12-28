@@ -6,7 +6,7 @@
 
 @layer base {
     html {
-        @apply font-sans;
+        font-family: "Noto Sans Tagalog", "Noto Emoji", sans-serif;
     }
 } 
   

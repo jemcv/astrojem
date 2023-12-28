@@ -3,9 +3,6 @@ import Projects from '../components/Projects.astro'
 import Writings from '../components/Writings.astro'
 import Socials from '../components/Socials.astro'
 
-import '@fontsource/noto-sans-tagalog';
-import '@fontsource-variable/noto-emoji';
-
 const { pageTitle } = Astro.props;  
 ---
 <html lang="en">
@@ -24,8 +21,3 @@ const { pageTitle } = Astro.props;
     <Socials />
   </body>
 </html>
-<style is:global>
-    html {
-      font-family: 'Noto Sans Tagalog', 'Noto Emoji Variable', sans-serif;
-    }
-</style>

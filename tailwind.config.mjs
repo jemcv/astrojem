@@ -1,11 +1,15 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		fontFamily: {
-			'sans': ['Noto Sans Tagalog', 'Noto Emoji','sans-serif'],
+		extend: {
+			fontFamily: {
+				'sans': ['Noto Sans Tagalog', 'Noto Emoji',...defaultTheme.fontFamily.sans],
+			}
 		},
-		extend: {},
 	},
 	plugins: [],
 }

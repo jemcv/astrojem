@@ -7,7 +7,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				'sans': ['Noto Sans Tagalog', 'Noto Emoji',...defaultTheme.fontFamily.sans],
+				'sans': ['"Noto Sans Tagalog"', '"Noto Emoji"',...defaultTheme.fontFamily.sans],
 			}
 		},
 	},

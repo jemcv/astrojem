@@ -6,8 +6,8 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), tailwind()],
   markdown: {
-    remarkPlugins: [remarkReadingTime()],
-  }
+    remarkPlugins: [remarkReadingTime],
+  },
+  integrations: [react(), tailwind()],
 });

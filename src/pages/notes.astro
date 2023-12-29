@@ -16,7 +16,7 @@ const allPosts = await getCollection("notes");
         {/*<p>Notes Count: {allPosts.length}</p> */}
     </div>
     <Navigations url={"/"}/>
-    <ul class="mt-4">
+    <ul class="mt-2">
         {
             allPosts.map((post) => (
             <Posts url={`/notes/${post.slug}/`} title={post.data.title} description={post.data.description} pubDate={post.data.pubDate.toString().slice(0,15)}/>

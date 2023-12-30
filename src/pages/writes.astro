@@ -16,7 +16,7 @@ const posts = await Promise.all(
             ...post,
             data: {
                 ...post.data,
-                minutesRead: remarkPluginFrontmatter.minutesRead as string,
+                minutesRead: remarkPluginFrontmatter.minutesRead `as string`,
             },
       };
     }),

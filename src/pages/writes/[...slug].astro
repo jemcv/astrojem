@@ -5,22 +5,13 @@ import Navigations from '../../components/Navigations.astro';
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection('writes');
-  return Promise.all(blogEntries.map(async entry => {
-    const { remarkPluginFrontmatter } = await entry.render();
-    return {
-      params: { slug: entry.slug },
-      props: { entry },
-      data: {
-        readingTime: remarkPluginFrontmatter.minutesRead as string
-      }
-    };
+  return blogEntries.map(entry => ({
+    params: { slug: entry.slug }, props: { entry },
   }));
 }
 
-
 const { entry } = Astro.props;
 const { Content, remarkPluginFrontmatter } = await entry.render();
-console.log(remarkPluginFrontmatter.minutesRead)
 ---
 
 <PostLayout>

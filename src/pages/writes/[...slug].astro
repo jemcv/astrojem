@@ -14,7 +14,7 @@ const { entry } = Astro.props;
 const { Content, remarkPluginFrontmatter } = await entry.render();
 ---
 
-<PostLayout>
+<PostLayout pageTitle={entry.data.title}>
   <h1 class="text-4xl font-bold mb-4">ᜐᜓᜎᜆᜒᜈ᜔</h1>
     <Navigations url="../"/>
     <div class="flex justify-between mt-2">

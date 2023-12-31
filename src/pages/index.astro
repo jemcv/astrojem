@@ -1,5 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Projects from '../components/Projects.astro';
+import Writings from '../components/Writings.astro';
+import Socials from '../components/Socials.astro';
+
 const pageTitle = "jemcv";
 
 const information = {
@@ -20,4 +24,7 @@ const information = {
 		<p class="mb-4">I am passionate about <b>{information.hobbies[0]}</b>, <b>{information.hobbies[1]}</b>, and <b>{information.hobbies[2]}</b>. I’m currently on a mission to become a Software Developer 🧑‍💻, turning my passion for technology into a dream career. I’m in the process of completing my Bachelor of Science in Information Technology degree.</p>
 		<p>Currently adopting a design approach focused on simplicity and clarity. My guiding philosophy is based on the belief that '<span class="font-bold italic">less is more</span>'.</p>
 	</div>
+	<Projects />
+    <Writings />
+    <Socials />
 </BaseLayout>

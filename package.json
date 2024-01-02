@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/react": "^3.0.8",
     "@astrojs/rss": "^4.0.1",
+    "@astrojs/sitemap": "^3.0.4",
     "@astrojs/tailwind": "^5.0.4",
     "@fontsource-variable/noto-emoji": "^5.0.17",
     "@fontsource/noto-sans-tagalog": "^5.0.18",

@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import { remarkReadingTime } from './remark-reading-time.mjs';
 
+import sitemap from '@astrojs/sitemap';
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 
@@ -9,6 +10,6 @@ export default defineConfig({
   markdown: {
     remarkPlugins: [remarkReadingTime],
   },
-  integrations: [react(), tailwind()],
+  integrations: [react(), tailwind(), sitemap()],
   site: "https:jemcv.me"
 });

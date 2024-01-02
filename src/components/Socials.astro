@@ -1,6 +1,6 @@
 ---
 import Social from "./Links.astro";
-import { InstagramIcon, GithubIcon, RssIcon} from 'astro-feather';
+import { InstagramIcon, GithubIcon, RssIcon, GlobeIcon} from 'astro-feather';
 ---
 
 <footer class="mt-8 flex ">
@@ -21,5 +21,11 @@ import { InstagramIcon, GithubIcon, RssIcon} from 'astro-feather';
         url="https://jemcv.me/rss.xml"
         title="RSS" 
         alt="rss"
+    />
+    <Social
+        Icon={GlobeIcon} 
+        url="https://jemcv.github.io/web"
+        title="Archive" 
+        alt="website"
     />
 </footer>

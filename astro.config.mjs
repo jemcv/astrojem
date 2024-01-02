@@ -10,4 +10,5 @@ export default defineConfig({
     remarkPlugins: [remarkReadingTime],
   },
   integrations: [react(), tailwind()],
+  site: "https:jemcv.me"
 });

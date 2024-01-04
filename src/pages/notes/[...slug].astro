@@ -22,11 +22,11 @@ const { Content, remarkPluginFrontmatter } = await entry.render();
       <h1 class="font-bold">{entry.data.title}</h1>
       <p class="text-neutral-400">{entry.data.pubDate.toString().slice(0,10)}</p>
     </div>
-    <div class="flex justify-between">
+    <div class="flex justify-between mb-5">
       <p class="text-neutral-400">{entry.data.description}</p>
       <p class="text-neutral-400">{remarkPluginFrontmatter.minutesRead}</p>
     </div>
-    <div class="mt-2 prose dark:prose-invert max-w-none prose-img:mx-auto">
+    <article class="prose dark:prose-invert max-w-none prose-img:mx-auto">
       <Content />
-    </div>
+    </article>
 </PostLayout>

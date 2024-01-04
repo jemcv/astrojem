@@ -6,15 +6,19 @@ export async function GET(context) {
     const notes = await getCollection('notes');
 
     const allItems = [
-        ...writes.map(post => ({ ...post, type: 'writes' })),
-        ...notes.map(post => ({ ...post, type: 'notes' }))
+        ...writes
+        .map(post => ({ ...post, type: 'writes' })),
+        ...notes
+        .map(post => ({ ...post, type: 'notes' }))
     ];
 
     return rss({
         title: 'jem',
         description: 'memento mori',
         site: context.site,
-        items: allItems.map((post) => ({
+        items: allItems
+        .filter((post) => post.data.draft !== true)
+        .map((post) => ({
         title: post.data.title,
         pubDate: post.data.pubDate,
         description: post.data.description,

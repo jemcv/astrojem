@@ -9,6 +9,7 @@ const allPosts = await getCollection("writes");
 
 const posts = await Promise.all(
     allPosts
+    .filter(post => post.data.draft !== true)
     .sort(((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()))
     .map(async (post) => {
         const { remarkPluginFrontmatter  } = await post.render();
@@ -22,7 +23,6 @@ const posts = await Promise.all(
     }),
 )
 ---
-
 <PostLayout pageTitle={pageTitle}>
     <h1 class="text-4xl font-bold mb-4">ᜐᜓᜎᜆᜒᜈ᜔</h1>
    

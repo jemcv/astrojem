@@ -4,6 +4,7 @@ import { z, defineCollection } from "astro:content";
 const notes = defineCollection({
     type: 'content',
     schema: z.object({
+      isDraft: z.boolean(),
       title: z.string(),
       pubDate: z.date(),
       description: z.string(),
@@ -19,6 +20,7 @@ const notes = defineCollection({
 const writes = defineCollection({
     type: 'content',
     schema: z.object({
+      isDraft: z.boolean(),
       title: z.string(),
       pubDate: z.date(),
       description: z.string(),

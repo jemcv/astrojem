@@ -9,6 +9,7 @@ const allPosts = await getCollection("notes");
 
 const posts = await Promise.all(
     allPosts
+    .filter(post => post.data.draft !== true)
     .sort(((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()))
     .map(async (post) => {
         const { remarkPluginFrontmatter  } = await post.render();

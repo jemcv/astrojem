@@ -5,7 +5,9 @@ import Navigations from '../../components/Navigations.astro';
 
 export async function getStaticPaths() {
   const blogEntries = await getCollection('notes');
-  return blogEntries.map(entry => ({
+  return blogEntries
+  .filter(entry => entry.data.draft !== true)
+  .map(entry => ({
     params: { slug: entry.slug }, props: { entry },
   }));
 }

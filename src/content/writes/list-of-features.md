@@ -13,7 +13,7 @@ draft: false
 I created a new personal website using Astro. Below is the list of its f-e-a-t-u-r-e-s.
 ![astrologo-light](https://docs.astro.build/assets/full-logo-light.png)
 
-1. **Minimalistic Design**: It provides a clean, minimalistic design, focusing on usability.
+1. **Minimalist Design**: It provides a clean, minimalistic design, focusing on usability.
 2. **RSS Support**: It has RSS feed support, allowing users to subscribe and receive updates.
 3. **Optimized Performance**: The website achieves a 100 score across every Lighthouse category.
 4. **Markdown Layout**: The website utilizes Tailwind CSS Typography. This ensures enhanced readability providing good user experience when browsing through the site's posts.

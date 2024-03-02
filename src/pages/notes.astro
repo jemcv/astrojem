@@ -34,7 +34,7 @@ const posts = await Promise.all(
     <ul>
         {
             posts.map((post) => (
-            <Posts url={`/notes/${post.slug}/`} title={post.data.title} description={post.data.description} pubDate={post.data.pubDate.toString().slice(0,10)} minutesRead={post.data.minutesRead}/>
+            <Posts transition={post.data.title} url={`/notes/${post.slug}/`} title={post.data.title} description={post.data.description} pubDate={post.data.pubDate.toString().slice(0,10)} minutesRead={post.data.minutesRead}/>
             ))
         }
     </ul>

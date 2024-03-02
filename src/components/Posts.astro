@@ -1,9 +1,9 @@
 ---
-const { url, title, description, pubDate, minutesRead } = Astro.props 
+const { url, title, description, pubDate, minutesRead, transition } = Astro.props 
 ---
 <li class="my-2">
     <div class="flex justify-between">
-        <a class="underline border border-transparent hover:border-slate-100" href={url}>{title} </a>
+        <a class="underline border border-transparent hover:border-slate-100" transition:name={transition} href={url}>{title} </a>
         <p class="text-neutral-400">{pubDate}</p>
     </div>
     <div class="flex justify-between">

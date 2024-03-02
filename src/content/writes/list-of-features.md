@@ -1,6 +1,6 @@
 ---
 title: 'My new website'
-pubDate: 2024-1-20
+pubDate: 2024-01-20
 description: 'List of f-e-a-t-u-r-e-s'
 author: 'jemcv'
 image:

@@ -3,14 +3,11 @@ title: 'My new website'
 pubDate: 2024-01-20
 description: 'List of f-e-a-t-u-r-e-s'
 author: 'jemcv'
-image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
-    alt: 'The full Astro logo.'
 tags: ["write", "thought",]
 draft: false
 ---
 
-I created a new personal website using Astro. Below is the list of its f-e-a-t-u-r-e-s.
+I created a new personal website using Astro. Below is the list of its features.
 ![astrologo-light](https://docs.astro.build/assets/full-logo-light.png)
 
 1. **Minimalist Design**: It provides a clean, minimalistic design, focusing on usability.
@@ -33,4 +30,3 @@ This personal website is hosted on Vercel and uses a .me domain from Namecheap. 
 PageSpeed: [Results](https://pagespeed.web.dev/analysis/https-jemcv-me/8x1tytl1vv)
 
 Source Code: [https://github.com/jemcv/astrojem](https://github.com/jemcv/astrojem)
-

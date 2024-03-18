@@ -1,7 +1,7 @@
 ---
 title: 'How not to get HACKED'
 pubDate: 2024-03-15
-description: 'Avoid the HackerMan'
+description: 'Avoid the Hackerman'
 author: 'jemcv'
 tags: ["write", "security"]
 draft: false

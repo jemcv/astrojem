@@ -7,7 +7,7 @@ tags: ["write", "security"]
 draft: false
 --- 
 
-*"The world is a dangerous place, Elliott, not because of those who do evil, but because of those who look on and do nothing." ― Mr. Robot*
+*"The world is a dangerous place, Elliot, not because of those who do evil, but because of those who look on and do nothing." ― Mr. Robot*
 
 ![Online Security](https://images.unsplash.com/photo-1582266255765-fa5cf1a1d501?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&w=1000)
 
@@ -28,13 +28,13 @@ Here's a list of practices I follow to keep myself secure:
 Apps I use: 
 
 - [Bitwarden](https://bitwarden.com/) securely stores passwords and sensitive information.
-
 - [ProtonVPN](https://protonvpn.com/) encrypts internet connection for enhanced privacy and security.
 
 Additional resources:
 
-Check if your email is part of a data breach: [Have I Been Pwned](https://haveibeenpwned.com/) 
+- Check if your email is part of a data breach: [Have I Been Pwned](https://haveibeenpwned.com/) 
+- Check your password strength: [Bitwarden's Password Strength Checker](https://bitwarden.com/password-strength/) 
 
-Check your password strength: [Bitwarden's Password Strength Checker](https://bitwarden.com/password-strength/) 
+By following these simple steps, you can significantly improve your online security. 
 
-By following these simple steps, you can significantly improve your online security. Stay safe out there!
+**Stay safe out there!**

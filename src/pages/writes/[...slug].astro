@@ -26,7 +26,7 @@ const { Content, remarkPluginFrontmatter } = await entry.render();
       <p class="text-neutral-400">{entry.data.description}</p>
       <p class="text-neutral-400">{remarkPluginFrontmatter.minutesRead}</p>
     </div>
-    <article class="prose dark:prose-invert max-w-none prose-img:mx-auto">
+    <article class="prose prose-invert max-w-none prose-img:mx-auto">
       <Content />
     </article>
 </PostLayout>

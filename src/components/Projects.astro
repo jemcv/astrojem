@@ -1,24 +1,25 @@
 ---
 import Project from './Cards.astro';
-import { MonitorIcon, SmartphoneIcon, ChromeIcon } from 'astro-feather';
+import { ShieldIcon, TerminalIcon, UserIcon } from 'astro-feather';
 ---
 <section class="mt-4">
     <h1 class="font-bold mb-2">Projects</h1>
     <Project 
-        Icon={SmartphoneIcon} 
-        url="example.com"
-        title="Mobile App" 
-        description="planning to build a mobile app with react native..."
+        Icon={ShieldIcon} 
+        url="https://github.com/carbonetes/brainiac"
+        title="brainiac" 
+        description="an open-source tool i contributed to during my internship"
     />
     <Project 
-        Icon={ChromeIcon} 
-        url="example.com"
-        title="Web App" 
-        description="currently building this with astro..."
+        Icon={TerminalIcon} 
+        url="https://github.com/jemcv/lolst"
+        title="lolst" 
+        description="league of legends rank stats in the terminal using bash"
     />
-    <Project 
-        Icon={MonitorIcon} 
-        url="example.com"
-        title="Desktop App" 
-        description="I dont plan to build one..."
+    <Project
+        Icon={UserIcon} 
+        url="https://github.com/jemcv/astrojem"
+        title="astrojem" 
+        description="the source code of my personal site built with astro"
+    />
 </section>

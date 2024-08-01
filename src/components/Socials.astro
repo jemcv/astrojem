@@ -1,8 +1,8 @@
 ---
 import Social from "./Links.astro";
-import {  GithubIcon, RssIcon, ArchiveIcon, MailIcon } from 'astro-feather';
+import {  GithubIcon, RssIcon, ArchiveIcon, MailIcon, LinkedinIcon } from 'astro-feather';
 ---
-<footer class="mt-8 flex flex-nowrap">
+<footer class="mt-8 flex flex-wrap">
     <Social
         Icon={GithubIcon} 
         url="https://github.com/jemcv"
@@ -10,21 +10,21 @@ import {  GithubIcon, RssIcon, ArchiveIcon, MailIcon } from 'astro-feather';
         alt="github"
     />
     <Social
-        Icon={ArchiveIcon} 
-        url="https://jemcv.github.io/web"
-        title="Archive" 
-        alt="website"
-    />
-    <Social
-        Icon={RssIcon} 
-        url="https://jemcv.me/rss.xml"
-        title="RSS" 
-        alt="rss"
+        Icon={LinkedinIcon}
+        url="https://www.linkedin.com/in/jemuel-veroja/"
+        title="Linkedin"
+        alt="linkedin"
     />
    <Social
         Icon={MailIcon}
         url="mailto:jemcv.dev@gmail.com"
         title="Email"
         alt="email"
+    />
+    <Social
+        Icon={RssIcon} 
+        url="https://jemcv.me/rss.xml"
+        title="RSS" 
+        alt="rss"
     />
 </footer>

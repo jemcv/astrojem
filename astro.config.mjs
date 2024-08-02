@@ -4,9 +4,14 @@ import { remarkReadingTime } from './remark-reading-time.mjs';
 import sitemap from '@astrojs/sitemap';
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
+import vercel from '@astrojs/vercelserverless';
 
 // https://astro.build/config
 export default defineConfig({
+  output: 'server',
+  adapter: vercel({
+    webAnalytics: { enabled: true}
+  }),
   markdown: {
     remarkPlugins: [remarkReadingTime],
   },

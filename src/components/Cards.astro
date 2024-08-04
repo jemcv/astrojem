@@ -1,12 +1,16 @@
 ---
-const { Icon, title, description, url, emoji } = Astro.props;
+const { Icon, title, description, url, emoji, targetBlank } = Astro.props;
 ---
 <div class="flex items-center p-4">
     <div class="w-8">
         <Icon size={48} strokeWidth={1}/> 
     </div>
     <div class="ml-8">
-        <p class="font-semibold"><a class="border border-transparent hover:border-neutral-100 underline" href={url}>{title}</a></p>
+        <p class="font-semibold">
+            <a class="border border-transparent hover:border-neutral-100 underline" href={url} target={targetBlank ? "_blank" : "_self"} rel={targetBlank ? "noopener noreferrer" : ""}>
+                {title}
+            </a>
+        </p>
         <p class="text-neutral-400">{description} {emoji}</p>
     </div>
 </div>

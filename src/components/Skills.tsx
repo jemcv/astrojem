@@ -9,24 +9,40 @@ import AstroOriginalIcon from "react-devicons/astro/plain";
 import GitOriginalIcon from "react-devicons/git/plain";
 import LinuxOriginalIcon from "react-devicons/linux/plain";
 
-export default function Skills() {
+const skills = [
+  { name: "HTML", Icon: HTMLOriginalIcon },
+  { name: "CSS", Icon: CSSOriginalIcon },
+  { name: "JavaScript", Icon: JavascriptOriginalIcon },
+  { name: "PHP", Icon: PHPOriginalIcon },
+  { name: "MySQL", Icon: MySQLOriginalIcon },
+  { name: "React", Icon: ReactOriginalIcon },
+  { name: "TailwindCSS", Icon: TailwindCSSOriginalIcon },
+  { name: "Astro", Icon: AstroOriginalIcon },
+  { name: "Git", Icon: GitOriginalIcon },
+  { name: "Linux", Icon: LinuxOriginalIcon },
+];
+
+const Skills: React.FC<{ color?: string; size?: number }> = ({
+  color = "white",
+  size = 40,
+}) => {
   return (
     <section className="mt-2">
-    <h1 className="font-bold mb-2">Skills</h1>
-    <div className="flex justify-center items-center">
-      <div className="flex flex-wrap gap-6 border border-transparent hover:border-neutral-100 underline p-4">
-        <HTMLOriginalIcon color="white" size={40} />
-        <CSSOriginalIcon color="white" size={40} />
-        <JavascriptOriginalIcon color="white" size={40} />
-        <PHPOriginalIcon color="white" size={40} />
-        <MySQLOriginalIcon color="white" size={40} />
-        <ReactOriginalIcon color="white" size={40} />
-        <TailwindCSSOriginalIcon color="white" size={40} />
-        <AstroOriginalIcon color="white" size={40} />
-        <GitOriginalIcon color="white" size={40} />
-        <LinuxOriginalIcon color="white" size={40} />
+      <h1 className="font-bold mb-2">Skills</h1>
+      <div className="flex justify-center items-center">
+        <div className="flex flex-wrap gap-6 p-4">
+          {skills.map(({ name, Icon }) => (
+            <div key={name} className="group relative">
+              <Icon color={color} size={size} aria-label={name} className="border border-transparent hover:border-neutral-100"/>
+              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-6 opacity-0 group-hover:opacity-100 transition-opacity text-sm text-neutral-200">
+                {name}
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
     </section>
   );
-}
+};
+
+export default Skills;

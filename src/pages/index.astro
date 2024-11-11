@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Projects from '../components/Projects.astro';
 import Writings from '../components/Writings.astro';
 import Socials from '../components/Socials.astro';
+import Skills from '../components/Skills';
 
 const pageTitle = "jemcv";
 
@@ -25,6 +26,7 @@ const information = {
 		<p>Currently adopting a design approach focused on simplicity and clarity. My guiding philosophy is based on the belief that '<span class="font-bold italic">less is more</span>'.</p>
     <p class="mt-4">Check out my previous <a href="https://jemcv.github.io/web" target="_blank"><span class="font-bold underline">Linux setup</span>.</a> 🐧</p>  
   </div>
+    <Skills />
     <Projects />
     <Writings />
     <Socials />

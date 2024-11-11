@@ -6,10 +6,13 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "build:node": "astro build -- --node",
     "preview": "astro preview",
+    "preview:node": "astro preview -- --node",
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/node": "^8.3.4",
     "@astrojs/react": "^3.0.8",
     "@astrojs/rss": "^4.0.1",
     "@astrojs/sitemap": "^3.0.4",
@@ -25,6 +28,7 @@
     "markdown-it": "^14.0.0",
     "mdast-util-to-string": "^4.0.0",
     "react": "^18.2.0",
+    "react-devicons": "^2.16.2",
     "react-dom": "^18.2.0",
     "reading-time": "^1.5.0",
     "sanitize-html": "^2.12.1",

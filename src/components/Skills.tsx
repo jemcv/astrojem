@@ -11,7 +11,7 @@ import LinuxOriginalIcon from "react-devicons/linux/plain";
 
 export default function Skills() {
   return (
-    <>
+    <section className="mt-2">
     <h1 className="font-bold mb-2">Skills</h1>
     <div className="flex justify-center items-center">
       <div className="flex flex-wrap gap-6 border border-transparent hover:border-neutral-100 underline p-4">
@@ -27,6 +27,6 @@ export default function Skills() {
         <LinuxOriginalIcon color="white" size={40} />
       </div>
     </div>
-    </>
+    </section>
   );
 }

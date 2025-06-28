@@ -34,7 +34,7 @@ const Skills: React.FC<{ color?: string; size?: number }> = ({
           {skills.map(({ name, Icon }) => (
             <div key={name} className="group relative">
               <Icon color={color} size={size} aria-label={name} className="border border-transparent hover:border-neutral-100"/>
-              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-6 opacity-0 group-hover:opacity-100 transition-opacity text-sm text-neutral-200">
+              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-6 opacity-0 group-hover:opacity-100 transition-opacity text-sm text-neutral-200 pointer-events-none">
                 {name}
               </span>
             </div>
